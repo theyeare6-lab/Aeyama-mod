@@ -1,23 +1,24 @@
 plugins {
-    id 'java'
+    id 'fabric-loom' version '1.6-SNAPSHOT'
+    id 'maven-publish'
 }
 
-group = 'aeyama'
-version = '1.0'
-
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
+group = 'com.aeyama'
+version = '1.0.0'
 
 repositories {
     mavenCentral()
-    maven { url 'https://jitpack.io' }
+    maven { url 'https://maven.fabricmc.net/' }
 }
 
 dependencies {
-    compileOnly "com.github.Anuken.Mindustry:core:158.1"
-    compileOnly "com.github.Anuken.Arc:arc-core:158.1"
+    minecraft "com.mojang:minecraft:1.20.1"
+    mappings "net.fabricmc:yarn:1.20.1+build.10:v2"
+    modImplementation "net.fabricmc:fabric-loader:0.15.11"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.91.0+1.20.1"
 }
 
-jar {
-    archiveFileName = 'aeyama.jar'
+java {
+    sourceCompatibility JavaVersion.VERSION17
+    targetCompatibility JavaVersion.VERSION17
 }
