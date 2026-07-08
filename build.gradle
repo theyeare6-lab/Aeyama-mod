@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group = 'aeyama'
+version = '1.0'
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compileOnly "com.github.Anuken.Mindustry:core:158.1"
+    compileOnly "com.github.Anuken.Arc:arc-core:158.1"
+}
+
+jar {
+    archiveFileName = 'aeyama.jar'
+}

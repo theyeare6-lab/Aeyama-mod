@@ -1,0 +1,9 @@
+{
+  "name": "aeyama",
+  "displayName": "Aeyama",
+  "author": "Jojo, Freddy jabe",
+  "version": "1.0",
+  "description": "Aeyama mod for Mindustry",
+  "minGameVersion": "158.1",
+  "main": "aeyama.Aeyama"
+}
